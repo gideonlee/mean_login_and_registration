@@ -1,0 +1,16 @@
+* {
+	/*outline: 2px solid black;*/
+}
+
+form label {
+	display: block;
+}
+form input {
+	display: block;
+}
+form input[type=submit] {
+	margin-top: 20px;
+}
+div.login {
+	margin-bottom: 50px;
+}
