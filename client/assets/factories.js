@@ -4,11 +4,18 @@ app.factory('UserFactory', ['$http', function($http) {
 	// DELETE THIS FUNCTION LATER
 	factory.index = function() {
 		return $http.get('/users');
+	};
+
+	factory.findUser = function(id) {
+		return $http.get('/users/'+id);
 	}
 
-	factory.create = function(user) {
-		console.log(user);
-		return $http.post('/users', user);
+	factory.register = function(user) {
+		return $http.post('/register', user);
+	};
+
+	factory.login = function(user) {
+		return $http.post('/login', user);
 	};
 
 	return factory;

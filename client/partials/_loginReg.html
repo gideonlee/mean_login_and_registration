@@ -1,28 +1,36 @@
-<div class='login'>
-	<h2>Login</h2>
-	<form>
-		<label>Email: </label>
-		<input type='text' ng-model='login_user.email'>
-		<label>Password: </label>
-		<input type='password' ng-model='login_user.password'>
-		<input class='btn btn-default' type='submit' value='Login' ng-click='login()'>
-	</form>
+<div class='inline'>
+	<div class='login'>
+		<h2>Login</h2>
+		<form>
+			<label>Email: </label>
+			<input type='text' ng-model='login_user.email'>
+			<label>Password: </label>
+			<input type='password' ng-model='login_user.password'>
+			<input class='btn btn-default' type='submit' value='Login' ng-click='login()'>
+		</form>
+	</div>
+	
+	<div class='reg'>
+		<h2>Registration</h2>
+		<form>
+			<label>First Name: </label>
+			<input type='text' ng-model='register_user.first_name'>
+			<label>Last Name: </label>
+			<input type='text' ng-model='register_user.last_name'>
+			<label>Email: </label>
+			<input type='text' ng-model='register_user.email'>
+			<label>Birthday: </label>
+			<input type='date' ng-model='register_user.birthday'>
+			<label>Password: </label>
+			<input type='password' ng-model='register_user.password'>
+			<label>Password Confirmation: </label>
+			<input type='password' ng-model='register_user.password_confirm'>
+			<input class='btn btn-default' type='submit' value='Register' ng-click='register()'>
+		</form>
+	</div>
 </div>
-<div class='reg'>
-	<h2>Registration</h2>
-	<form>
-		<label>First Name: </label>
-		<input type='text' ng-model='user.first_name'>
-		<label>Last Name: </label>
-		<input type='text' ng-model='user.last_name'>
-		<label>Email: </label>
-		<input type='text' ng-model='user.email'>
-		<label>Birthday: </label>
-		<input type='date' ng-model='user.birthday'>
-		<label>Password: </label>
-		<input type='password' ng-model='user.password'>
-		<label>Password Confirmation: </label>
-		<input type='password' ng-model='user.password_confirm'>
-		<input class='btn btn-default' type='submit' value='Register' ng-click='register()'>
-	</form>
+<div class='inline'>
+	<flash-message duration='5000' show-close='true' on-dismiss='myCallback(flash)'></flash-message>
 </div>
+
+	

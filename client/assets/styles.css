@@ -12,5 +12,11 @@ form input[type=submit] {
 	margin-top: 20px;
 }
 div.login {
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
+}
+
+.inline {
+	vertical-align: top;
+	display: inline-block;
+	margin-right: 30px;
 }

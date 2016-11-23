@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var path = require('path');
-
+mongoose.Promise = global.Promise; // Makes mongoose's promise use JS's native promise.
 var fs = require('fs');
 
 mongoose.connect('mongodb://localhost/login_reg_users');
